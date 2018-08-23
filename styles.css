@@ -1,0 +1,61 @@
+.hero {
+  background-image: url(https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?cs=srgb&dl=blurred-background-close-up-coffee-cup-908284.jpg&fm=jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+}
+
+.hero-body {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-bars {
+  border: solid 2px red;
+}
+
+.overview-cards {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+}
+
+#how-it-works {
+  color: white;
+}
+
+#video {
+  display: block;
+  margin: auto;
+  width: 48vw;
+  height: 27vw;
+}
+
+@media (max-width: 1024px) {
+  .overview-cards {
+    flex-direction: column;
+  }
+  .overview-cards .card {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  #video {
+    width: 80vw;
+    height: 45vw;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    background-position: 25% 50%;
+  }
+
+  .hero-body {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

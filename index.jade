@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Product Landing Page
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css")
+    link(rel="stylesheet", href="styles.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.2.0/css/all.cs", integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", crossorigin="anonymous")
+  body
+    //- script(src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js")
+    header#header
+      nav.navbar.is-link.is-fixed-top#nav-bar
+        .navbar-brand
+          .navbar-item#logo
+            img#header-img(src="https://imgplaceholder.com/250x50/3273dc/ffffff?text=Lorem+Ipsum&font-size=35&font-family=CaviarDreams_Bold" alt="Lorem Ipsum")
+          .navbar-burger
+            span
+            span
+            span
+        .navbar-menu
+          .navbar-end
+            a.navbar-item.nav-link(href="#home")
+              | Home
+            a.navbar-item.nav-link(href="#overview")
+              | Overview
+            a.navbar-item.nav-link(href="#how-it-works")
+              | How it works
+            a.navbar-item.nav-link(href="#contact-us")
+              | Contact Us           
+    section.hero.is-fullheight#home
+      .hero-body
+        .container
+          h1.title.is-2
+            | Lorem ipsum
+          h2.subtitle.is-4
+            | dolor sit amet
+    section.section#overview
+      .container
+        h1.title
+          | Overview
+        .overview-cards
+          .card
+            .card-content
+              .content
+                h2
+                  | Design
+                p
+                  | Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          .card
+            .card-content
+              .content
+                h2
+                  | Branding
+                p
+                  | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+          .card
+            .card-content
+              .content
+                h2
+                  | Promises
+                p
+                  | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+    section.section.has-background-dark#how-it-works
+      .container
+        h1.title.has-text-white-bis
+          | How it works
+        iframe#video(src="https://www.youtube.com/embed/XysRGYNtpgI?ecver=2")
+    section.section#contact-us
+      .container
+        h1.title
+          | Contact Us
+        form#form(action="https://www.freecodecamp.com/email-submit")
+          .field
+            label.label Name
+            .control
+              input.input(type="text" name="name" placeholder="Please enter your full name")
+          .field
+            label.label Email
+            .control
+              input.input#email(type="email" name="email" placeholder="Please enter your email address")
+          .field
+            label.label Message
+            .control
+              textarea.textarea(name="message" placeholder="Leave your message here")
+          .field
+            .control
+              input.button.is-link#submit(type="submit")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="app.js")
